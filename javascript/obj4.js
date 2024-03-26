@@ -5,7 +5,7 @@ var username=user["username"];
 var age=user["age"];
 
 console.log("username=",username,"age",age);
-var keys=user.keys;
+var keys=Object.keys(user);
 
 console.log("keys",keys);
 
