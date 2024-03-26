@@ -7,3 +7,4 @@ console.log("result is ",result);
 addUse(function(num1,num2){
     return num1+num2;
 },   5 , 7 );
+
