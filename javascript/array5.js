@@ -1,8 +1,9 @@
 const list=[30,10,20];
-//sort for me
-const newArray=list.sort((e1,e2)=>{
-return e2-e1;
+// declarative, you are ordering/declaring what needs to be done
+
+const sortedArray=list.sort((e1,e2)=>{
+    return e1-e2;
 });
 
-console.log("sorted is "+newArray);
 
+console.log("sorted array",sortedArray);
