@@ -11,3 +11,4 @@ const result=capsElements(array);
 console.log("result is ",result);
 
 console.log("original source ", array);
+
