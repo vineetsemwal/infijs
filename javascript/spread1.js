@@ -5,7 +5,7 @@ const user2={};
 user2.username=user1.username;
 user2.age=user1.age;
 */
-const user2={sal:250000,...user1};
+const user2={...user1,sal:250000};
 console.log("user1",user1);
 console.log("user2",user2);
 
