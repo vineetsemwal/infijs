@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript">
+        const url = "http://localhost:3000/products";
+        const promise = axios.get(url);
+        promise.then(response=>{
+            const products=response.data;
+            console.log("result is ", products);
+            const feedback=document.getElementById("feedback");
+            let innerHtml="";
+            for(let product of products){
+                const productHtml="product is "+product.id+"-"+product.name;
+                innerHtml=innerHtml+"<li>"+productHtml+"</li>";
+            }
+            feedback.innerHTML=innerHtml;
+
+        }).catch(err=>{
+            console.log("error is "+err);
+        })
+    </script>
+
+
+</head>
+
+
+
+<body>
+    
+    <h3>Products are</h3>
+
+    <ul id="feedback">
+
+    </ul>
+
+
+</body>
