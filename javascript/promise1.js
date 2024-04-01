@@ -16,7 +16,7 @@ function isEven(num) {
 
 function isEvenUse() {
 
-    const promise = isEven(10);
+    const promise = isEven();// non blocking operation
 
     console.log("bye");
     promise.then(result => {
