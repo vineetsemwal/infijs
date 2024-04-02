@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-
+<html>
 <head>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
     <script type="text/javascript">
         const url = "http://localhost:3000/products";
 
         async function fetchProducts(url){
             const promise=axios.get(url);
             const response=await promise;  
-            const products= await response.data;
+            const products=await response.data;
             console.log("result is ", products);
             const feedback=document.getElementById("feedback");
             let innerHtml="";
@@ -23,7 +24,8 @@
         fetchProducts(url);
 
     </script>
-
+   
+      
 
 </head>
 
@@ -37,5 +39,6 @@
 
     </ul>
 
-
 </body>
+
+</html>

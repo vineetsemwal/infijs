@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+</head>
+
+<body>
+
+<h3>Product Data</h3>    
+
+<button id ="btn" >Update Feedback  </button>
+
+<div  id="feedback">
+
+</div>
+
+
+<footer>
+    <script type="text/javascript">
+
+        function changeFeedbackHandler(){
+        const feedback=document.getElementById("feedback");
+        feedback.innerHTML="<h4> Today is 2nd April</h4>";
+        }
+        
+        function registerEvents(){
+           const btn= document.getElementById("btn");
+           btn.addEventListener("click",changeFeedbackHandler);
+        }
+        registerEvents();
+        
+        
+        
+        </script>
+        
+
+</footer>
+
+</body>
+
+</html>
