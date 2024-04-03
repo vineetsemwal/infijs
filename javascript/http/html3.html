@@ -3,6 +3,24 @@
 <html>
 
 <head>
+    <script type="text/javascript">
+
+        function changeFeedbackHandler(){
+        const feedback=document.getElementById("feedback");
+        feedback.innerHTML="<h4> Today is 2nd April</h4>";
+        }
+        
+        function registerEvents(){
+           const btn= document.getElementById("btn");
+           btn.addEventListener("click",changeFeedbackHandler);
+        }
+      //  registerEvents();
+        
+        window.addEventListener("DOMContentLoaded",registerEvents);
+        
+        </script>
+ 
+      
 </head>
 
 <body>
@@ -17,24 +35,7 @@
 
 
 <footer>
-    <script type="text/javascript">
-
-        function changeFeedbackHandler(){
-        const feedback=document.getElementById("feedback");
-        feedback.innerHTML="<h4> Today is 2nd April</h4>";
-        }
-        
-        function registerEvents(){
-           const btn= document.getElementById("btn");
-           btn.addEventListener("click",changeFeedbackHandler);
-        }
-        registerEvents();
-        
-        
-        
-        </script>
-        
-
+    
 </footer>
 
 </body>
