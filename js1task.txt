@@ -1,0 +1,24 @@
+Create a html Page 
+
+
+
+       Render List of  Customer Data , when user clicks on the button
+
+Customer data should be fetched from external source , currently json-server is ok
+
+
+      
+           
+      
+
+
+
+
+Customer
+{
+
+      id
+      name
+      balance
+      age
+}
